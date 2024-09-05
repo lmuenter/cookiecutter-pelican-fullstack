@@ -1,0 +1,9 @@
+# Contributors
+
+## Core Developers
+|Name|Github|
+|---|---|
+|Lukas Münter|[lmuenter](https://github.com/lmuenter/)|
+
+## Sources for Integration test
+This project adapted the `tests/test_cookiecutter_generation.py` from Cookiecutter-Django. Credit is due to the [original contributors](https://github.com/cookiecutter/cookiecutter-django/blob/master/CONTRIBUTORS.md) of cookiecutter-django.
