@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const config = require('config');
 
 module.exports = {
     mode: "development",
@@ -34,7 +35,7 @@ module.exports = {
             },
             {
                 test: /\.(scss)$/,
-                exclude: /pelican/,
+                exclude: /config.PROJECT_SLUG/,
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
