@@ -9,6 +9,7 @@
         "concurrently": "^8.2.2",
         "cross-env": "^7.0.3",
         "css-loader": "^6.11.0",
+        "dotenv": "^16.4.5",
         "mini-css-extract-plugin": "^2.9.0",
         "nodemon": "^3.1.4",
         "sass": "^1.77.8",
