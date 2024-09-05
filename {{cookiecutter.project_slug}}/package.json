@@ -19,9 +19,9 @@
         "webpack-cli": "^5.1.4"
     },
     "scripts": {
-        "start": "cross-env PYTHONIOENCODING=utf-8 concurrently \"node bin/run-pelican.js --verbose\" \"npm run watch-styles\" \"npm run watch-templates\" \"npm run serve\"",
-        "watch-styles": "nodemon --watch theme --ext js,scss,css --ignore theme/static/dist/* --exec \"node bin/update-theme.js styles\" --verbose",
-        "watch-templates": "nodemon --watch pelican/content --watch theme --ext html,md --ignore theme/static/dist/* --exec \"node bin/update-theme.js templates\" --verbose",
+        "start": "cross-env PYTHONIOENCODING=utf-8 concurrently \"node src/run-pelican.js --verbose\" \"npm run watch-styles\" \"npm run watch-templates\" \"npm run serve\"",
+        "watch-styles": "nodemon --watch theme --ext js,scss,css --ignore theme/static/dist/* --exec \"node src/update-theme.js styles\" --verbose",
+        "watch-templates": "nodemon --watch pelican/content --watch theme --ext html,md --ignore theme/static/dist/* --exec \"node src/update-theme.js templates\" --verbose",
         "serve": "wait-on http://127.0.0.1:8000 && cross-env browser-sync start --proxy http://127.0.0.1:8000 --files \"pelican/output/**/*.*\" --verbose"
     },
     "keywords": [],
