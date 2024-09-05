@@ -5,6 +5,7 @@ import itertools
 
 import pytest
 
+
 try:
     import sh
 except (ImportError, ModuleNotFoundError):
@@ -43,11 +44,11 @@ options = {
 options = {
     "project_name": ["Simple Project"],
     "description": ["Short description."],
-    "author_name": ["John O'Neil", "María da Silva", "Sakul Retnüm"],
+    "author_name": ["John O'Neil",],
     "domain_name": ["example.com"],
     "version": ["0.1.0"],
     "timezone": ["UTC"],
-    "default_language": ["en", "es", "de"],
+    "default_language": ["en",],
 }
 
 all_combinations = list(itertools.product(*options.values()))

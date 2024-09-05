@@ -1,0 +1,46 @@
+.navbar {
+    background-color: $light;
+    color: $dark;
+
+    .nav-item,
+    .nav-link,
+    .navbar-brand {
+        color: $dark;
+    }
+
+    .bi {
+        color: $dark;
+    }
+
+    .bi-sun-fill {
+        display: none;
+    }
+
+    .bi-moon-fill {
+        display: block;
+    }
+}
+
+// Dark theme
+html[data-theme="dark"] .navbar {
+    background-color: $dark;
+    color: $light;
+
+    .nav-item,
+    .nav-link,
+    .navbar-brand {
+        color: $light;
+    }
+
+    .bi {
+        color: $light;
+    }
+
+    .bi-moon-fill {
+        display: none;
+    }
+
+    .bi-sun-fill {
+        display: block;
+    }
+}

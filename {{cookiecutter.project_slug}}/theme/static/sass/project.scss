@@ -1,0 +1,18 @@
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+//@import 'bootstrap/variables';
+@import '~bootstrap/scss/bootstrap';
+
+@import 'components/navbar';
+
+@import 'themes/light';
+@import 'themes/dark';
+
+// Apply themes
+html[data-theme="light"] body {
+    @include theme-light;
+}
+
+html[data-theme="dark"] body {
+    @include theme-dark;
+}
