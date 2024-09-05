@@ -13,11 +13,11 @@ const contentDir = path.resolve(pelicanDir, 'content');
 const pythonExec = process.platform === 'win32' ? 'python' : 'python3';
 const pelicanExec = process.platform === 'win32'
     ? path.resolve(projectRoot, 'venv', 'Scripts', 'pelican.exe')
-    : path.resolve(projectRoot, 'venv', 'src', 'pelican');
+    : path.resolve(projectRoot, 'venv', 'bin', 'pelican');
 
 const venvActivate = process.platform === 'win32'
     ? path.resolve(projectRoot, 'venv', 'Scripts', 'activate')
-    : path.resolve(projectRoot, 'venv', 'src', 'activate');
+    : path.resolve(projectRoot, 'venv', 'bin', 'activate');
 
 // Webpack
 const useWebpack = true;
