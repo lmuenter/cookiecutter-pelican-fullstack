@@ -1,5 +1,5 @@
 const path = require('path');
-require('dotenv').config
+require('dotenv').config();
 
 const PROJECT_SLUG = process.env.PROJECT_SLUG || 'pelican';
 
