@@ -9,7 +9,6 @@ try:
     import sh
 except (ImportError, ModuleNotFoundError):
     sh = None  # sh doesn't support Windows
-import yaml
 from binaryornot.check import is_binary
 from cookiecutter.exceptions import FailedHookException
 
