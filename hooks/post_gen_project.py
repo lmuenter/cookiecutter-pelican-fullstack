@@ -1,6 +1,3 @@
-import os
-
-
 project_slug = '{{ cookiecutter.project_slug }}'
 env_content = f"PROJECT_SLUG={project_slug}"
 
