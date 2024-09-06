@@ -78,12 +78,13 @@ def _fixture_id(ctx):
 
 
 def build_files_list(base_dir):
-    """Build a list containing absolute paths to the generated files."""
-    return [
-        os.path.join(dirpath, file_path)
-        for dirpath, subdirs, files in os.walk(base_dir)
-        for file_path in files
-    ]
+    """Build a list containing absolute paths to the generated files, excluding node_modules."""
+    files_list = []
+    for dirpath, subdirs, files in os.walk(base_dir):
+        if "node_modules" in subdirs:
+            subdirs.remove("node_modules")
+        files_list.extend(os.path.join(dirpath, file) for file in files)
+    return files_list
 
 
 def check_paths(paths):
