@@ -6,5 +6,5 @@ norecursedirs = [
     "*/static/*",
     "docs",
     "venv",
-    "*/{{cookiecutter.project_slug}}/*",
+    "*/{{cookiecutter.project_slug}}/*"
 ]

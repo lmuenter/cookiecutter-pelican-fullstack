@@ -7,5 +7,13 @@
     "version": "0.1.0",
     "timezone": "UTC",
     "default_language": "en",
-    "_copy_without_render": [ "*.html", "*.js", "*.map", "*.css", "*.yaml", "*.tpl" ]
+    "_copy_without_render": [
+    "*.html", 
+    "*.js", 
+    "*.map", 
+    "*.css", 
+    "*.yaml", 
+    "*.tpl", 
+    "node_modules/**/*"
+]
 }
