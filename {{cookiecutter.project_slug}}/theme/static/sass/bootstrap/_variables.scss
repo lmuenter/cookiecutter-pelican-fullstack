@@ -1,0 +1,29 @@
+/*
+Style Definitions for Bootstrap
+*/
+
+// Colors
+$white: #ffffff;
+
+$theme-colors: (
+    "primary":    #23594b,
+    "light":      #DCDFEA,
+    "dark":       #030f2b,
+    "secondary":  #D2B729,
+    "info":       #17A2B8,
+    "success":    #28A745,
+    "warning":    #FFC107,
+    "danger":     #DC3545
+);
+
+
+// Apply custom colors
+$primary: map-get($theme-colors, "primary");
+$secondary: map-get($theme-colors, "secondary");
+$dark: map-get($theme-colors, "dark");
+$light: map-get($theme-colors, "light");
+$info: map-get($theme-colors, "info");
+$success: map-get($theme-colors, "success");
+$warning: map-get($theme-colors, "warning");
+$danger: map-get($theme-colors, "danger");
+$content-background: #f6f7f9;

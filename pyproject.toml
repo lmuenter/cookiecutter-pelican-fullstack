@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+addopts = "-v --tb=short"
+norecursedirs = [
+    ".tox",
+    ".git",
+    "*/static/*",
+    "docs",
+    "venv",
+    "*/{{cookiecutter.project_slug}}/*"
+]

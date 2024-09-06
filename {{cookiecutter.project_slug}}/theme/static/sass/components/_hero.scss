@@ -1,0 +1,17 @@
+.hero-section {
+    background: url('~@images/hero-bg.webp') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: white;
+}
+
+.hero-section p {
+    color: white;
+}
